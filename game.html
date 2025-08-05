@@ -1,0 +1,28 @@
+<!-- Part 1-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tic-tac-tok/game.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Tic Tac Toe</h1>
+      <select id="difficulty">
+        <option value="easy">🟢 Easy</option>
+        <option value="medium">🟠 Medium</option>
+        <option value="hard">🔴 Hard</option>
+      </select>
+      <div class="board" id="board"></div>
+      <div class="status" id="status">Player X's turn</div>
+      <button onclick="resetGame()">Reset</button>
+    </div>
+    <!-- Popup -->
+    <div id="popup" class="popup" style="display: none">
+      <div class="popup-box" id="popup-message">Player X Wins!</div>
+    </div>
+    <script src="tic-tac-tok/game.js"></script>
+  </body>
+</html>
